@@ -1,0 +1,14 @@
+{
+  "modules": {
+    "debug": [],
+    "fs": [],
+    "gps": [],
+    "message": [],
+    "net": [
+      "n27"
+    ],
+    "sensors": [],
+    "uart": []
+  },
+  "conf": {}
+}

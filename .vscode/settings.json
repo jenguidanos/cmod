@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "uart-iface.h": "c",
+        "platform.h": "c",
+        "uart-manager.h": "c",
+        "termios.h": "c",
+        "uart.h": "c",
+        "*.r": "c",
+        "n27.h": "c",
+        "cmod.h": "c",
+        "cmod-net-n27.h": "c"
+    }
+}

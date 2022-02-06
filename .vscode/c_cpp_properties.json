@@ -1,0 +1,50 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/jordi/projects/cmod/include",
+                "/home/jordi/projects/cmod/src",
+                "/home/jordi/projects/cmod/lib/cmod-net-n27/include",
+                "/home/jordi/projects/cmod/lib/cmod-net-n27/src",
+                "/home/jordi/projects/cmod/lib/cmod-message-modbus/include",
+                "/home/jordi/projects/cmod/lib/cmod-message-modbus/src",
+                "/home/jordi/projects/cmod/lib/cmod/include",
+                "/home/jordi/projects/cmod/lib/cmod/src",
+                "/home/jordi/projects/cmod/platforms",
+                "/home/jordi/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/jordi/projects/cmod/include",
+                    "/home/jordi/projects/cmod/src",
+                    "/home/jordi/projects/cmod/lib/cmod-net-n27/include",
+                    "/home/jordi/projects/cmod/lib/cmod-net-n27/src",
+                    "/home/jordi/projects/cmod/lib/cmod-message-modbus/include",
+                    "/home/jordi/projects/cmod/lib/cmod-message-modbus/src",
+                    "/home/jordi/projects/cmod/lib/cmod/include",
+                    "/home/jordi/projects/cmod/lib/cmod/src",
+                    "/home/jordi/projects/cmod/platforms",
+                    "/home/jordi/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=50204",
+                ""
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "compilerArgs": [
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
