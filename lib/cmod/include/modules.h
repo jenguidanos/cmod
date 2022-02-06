@@ -9,6 +9,3 @@
 // GPS Modules
 #define CMOD_GPS_S7080 0x78
 #define CMOD_GPS_G7A 0x7A
-
-// CMod Protocolo Parsers
-#define CMOD_PARSER_V1 0x01

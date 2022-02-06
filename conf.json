@@ -1,14 +1,36 @@
 {
-  "modules": {
-    "debug": [],
-    "fs": [],
-    "gps": [],
-    "message": [],
-    "net": [
-      "n27"
-    ],
-    "sensors": [],
-    "uart": []
-  },
-  "conf": {}
+    "modules": {
+        "debug": [],
+        "fs": [],
+        "gps": [],
+        "message": "bin",
+        "net": [
+            "n27"
+        ],
+        "sensors": [],
+        "uart": []
+    },
+    "conf": {
+        "debug": {
+            "enabled": false
+        },
+        "fs": {
+            "enabled": false
+        },
+        "gps": {
+            "enabled": false
+        },
+        "message": {
+            "enabled": false
+        },
+        "net": {
+            "enabled": false
+        },
+        "sensors": {
+            "enabled": false
+        },
+        "uart": {
+            "enabled": false
+        }
+    }
 }
