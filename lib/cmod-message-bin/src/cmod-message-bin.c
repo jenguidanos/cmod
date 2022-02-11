@@ -1,3 +1,17 @@
-#include "cmod-message.h"
+#include "cmod-message-bin.h"
 
-struct iMessage message;
+#include "iface/imessage.h"
+
+int messageBinInit();
+int messageBinSet(iMessageProperty prop, ...);
+int messageBinSetData(iMessageData *data);
+iMessageData *messageBinGet();
+
+iMessageData messageData;
+
+iMessage messageBin = {
+    .init = messageBinInit,
+    .set = messageBinSet,
+    .setData = messageBinSetData,
+    .get = messageBinGet,
+};

@@ -18,7 +18,7 @@ typedef struct iNet {
   enum NetProtocol protocol;
   const int name;
   char id[20];
-  bool (*setId)(char* id);
+  bool (*setId)(char *id);
 
   /*
   .##....##.########.########
@@ -51,7 +51,7 @@ typedef struct iNet {
 
   bool (*connect)();
   bool (*disconnect)();
-  bool (*send)(uint8_t* data);
+  bool (*send)(uint8_t *data);
 
   /*
   .########.##....##.########.########...######...##....##

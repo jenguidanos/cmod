@@ -14,9 +14,10 @@
                 "/home/jordi/projects/cmod/lib/cmod-net-n27/src",
                 "/home/jordi/projects/cmod/lib/cmod-message-bin/include",
                 "/home/jordi/projects/cmod/lib/cmod-message-bin/src",
+                "/home/jordi/projects/cmod/lib/cmod-debug-printf/include",
+                "/home/jordi/projects/cmod/lib/cmod-debug-printf/src",
                 "/home/jordi/projects/cmod/lib/cmod/include",
                 "/home/jordi/projects/cmod/lib/cmod/src",
-                "/home/jordi/projects/cmod/platforms",
                 "/home/jordi/.platformio/packages/tool-unity",
                 ""
             ],
@@ -29,15 +30,16 @@
                     "/home/jordi/projects/cmod/lib/cmod-net-n27/src",
                     "/home/jordi/projects/cmod/lib/cmod-message-bin/include",
                     "/home/jordi/projects/cmod/lib/cmod-message-bin/src",
+                    "/home/jordi/projects/cmod/lib/cmod-debug-printf/include",
+                    "/home/jordi/projects/cmod/lib/cmod-debug-printf/src",
                     "/home/jordi/projects/cmod/lib/cmod/include",
                     "/home/jordi/projects/cmod/lib/cmod/src",
-                    "/home/jordi/projects/cmod/platforms",
                     "/home/jordi/.platformio/packages/tool-unity",
                     ""
                 ]
             },
             "defines": [
-                "PLATFORMIO=50204",
+                "PLATFORMIO=50205",
                 ""
             ],
             "compilerPath": "/usr/bin/gcc",

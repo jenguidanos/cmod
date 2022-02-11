@@ -3,8 +3,10 @@
 #include "iface/imessage.h"
 #include "platform.h"
 
-struct iMessage {
+struct iMessageData {
   int deviceId;
+  float temp;
 };
 
-extern iMessage message;
+extern iMessageData messageData;
+extern iMessage messageBin;

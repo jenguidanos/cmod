@@ -9,6 +9,27 @@
         "*.r": "c",
         "n27.h": "c",
         "cmod.h": "c",
-        "cmod-net-n27.h": "c"
-    }
+        "cmod-net-n27.h": "c",
+        "inet.h": "c",
+        "cmod-debug-printf.h": "c",
+        "idebug.h": "c",
+        "imessage.h": "c",
+        "stdlib.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "ranges": "c",
+        "*.tcc": "c",
+        "unordered_map": "c",
+        "numeric": "c",
+        "ostream": "c"
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "cmod-conf*.json"
+            ],
+            "url": "./scripts/cmod-conf.schema.json"
+        }
+    ]
 }

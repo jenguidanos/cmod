@@ -1,10 +1,31 @@
 #pragma once
 
+#include "platform.h"
+
+/**
+ * @brief Data model for messages
+ *
+ * This file only contains the declaration. Definition should be implemented
+ * in the module implementation.
+ */
+typedef struct iMessageData iMessageData;
+
+/**
+ * @brief Data type for message properties
+ *
+ * A property name identifies a sensor value
+ */
+typedef uint8_t iMessageProperty;
+
 /**
  * @brief Declare the main iMessage type
  *
- * This file should contain only de declaration. Definition should be done in
- * an external module. Properties and methods of iMessage will depend on that
- * external module.
+ * It contains the data model and the interface setter/getter.
  */
-typedef struct iMessage iMessage;
+typedef struct iMessage {
+  iMessageData *data;
+  int (*init)();
+  int (*set)(iMessageProperty prop, ...);
+  int (*setData)(iMessageData *data);
+  iMessageData *(*get)();
+} iMessage;
