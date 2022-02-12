@@ -9,7 +9,3 @@
 // GPS Modules
 #define CMOD_GPS_S7080 0x78
 #define CMOD_GPS_G7A 0x7A
-
-#include "debug.h"
-#include "message.h"
-#include "net.h"

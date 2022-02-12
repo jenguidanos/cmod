@@ -1,6 +1,6 @@
 #include "cmod-debug-printf.h"
 
-#include "platform.h"
+#include "cmod.h"
 
 int cmodDebugPrintfInit();
 void cmodDebugPrintfError(char* message, ...);
@@ -15,11 +15,11 @@ iDebug cmodDebugPrintf = {
     .log = cmodDebugPrintfLog,
 };
 
-void cmodDebugPrintfError(char* message, ...) {}
+void cmodDebugPrintfError(char* message, ...) { cmodPrintf(ERROR, message); }
 
-void cmodDebugPrintfWarn(char* message, ...) {}
+void cmodDebugPrintfWarn(char* message, ...) { cmodPrintf(WARNING, message); }
 
-void cmodDebugPrintfLog(char* message, ...) {}
+void cmodDebugPrintfLog(char* message, ...) { cmodPrintf(LOG, message); }
 
 void cmodPrintf(iDebugLevelType level, char* message, ...) {
   printf("[%s] ", level == ERROR     ? "ERROR"
@@ -32,3 +32,5 @@ void cmodPrintf(iDebugLevelType level, char* message, ...) {
 
   printf("\n");
 }
+
+int cmodDebugPrintfInit() {}

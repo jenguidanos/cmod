@@ -23,9 +23,9 @@ CMod cmod = {
 };
 
 bool setNet(iNet *net) { cmod.net = net; };
-bool setGps(iGPS *gps){};
-bool setDebug(iDebug *debug){};
-bool setMessage(iMessage *message){};
+bool setGps(iGPS *gps) { cmod.gps = gps; };
+bool setDebug(iDebug *debug) { cmod.debug = debug; };
+bool setMessage(iMessage *message) { cmod.message = message; };
 
 uint8_t initNet() {
   printf("[INIT] Net. ");
