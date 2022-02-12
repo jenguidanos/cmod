@@ -1,7 +1,6 @@
 #pragma once
 
 #include "iface/imessage.h"
-#include "platform.h"
 
 struct iMessageData {
   int deviceId;

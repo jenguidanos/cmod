@@ -1,6 +1,6 @@
 #pragma once
 
-#include "platform.h"
+#include "cmod-platform.h"
 
 enum NetProtocol { TCP = 1, UDP };
 

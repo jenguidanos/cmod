@@ -1,6 +1,7 @@
 #pragma once
 
-#include "platform.h"
+#include "cmod-platform.h"
+
 /**
  * @brief Debug level types definition
  *

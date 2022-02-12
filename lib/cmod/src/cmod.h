@@ -1,13 +1,13 @@
 #pragma once
 
-#include "debug.h"
+#include "cmod-debug.h"
+#include "cmod-message.h"
+#include "cmod-net.h"
+#include "cmod-platform.h"
 #include "iface/idebug.h"
 #include "iface/igps.h"
 #include "iface/imessage.h"
 #include "iface/inet.h"
-#include "message.h"
-#include "net.h"
-#include "platform.h"
 
 uint8_t init();
 uint8_t initDebug();

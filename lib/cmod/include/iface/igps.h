@@ -1,4 +1,6 @@
-#include "platform.h"
+#pragma once
+
+#include "cmod-platform.h"
 
 typedef struct Location {
   float lat;

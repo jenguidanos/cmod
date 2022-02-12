@@ -1,5 +1,5 @@
 #pragma once
 
-#include "cmod.h"
+#include "iface/inet.h"
 
 extern iNet N27;

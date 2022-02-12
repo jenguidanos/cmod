@@ -1,6 +1,6 @@
 #pragma once
 
-#include "platform.h"
+#include "cmod-platform.h"
 #include "uart-manager.h"
 
 struct CMod {
