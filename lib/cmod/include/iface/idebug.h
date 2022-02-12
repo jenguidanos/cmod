@@ -6,7 +6,7 @@
  *
  * The order matters, first error, last log
  */
-typedef enum { ERROR, WARNING, LOG } iDebugLevelType;
+typedef enum { CMOD_ERROR, CMOD_WARNING, CMOD_LOG } iDebugLevelType;
 
 /**
  * @brief Interface for debug object
@@ -23,7 +23,7 @@ typedef struct iDebug {
 
   int (*init)();
   int (*setLevel)(iDebugLevelType level);
-  void (*log)(char* message, ...);
   void (*error)(char* message, ...);
-  void (*warn)(char* message, ...);
+  void (*warning)(char* message, ...);
+  void (*log)(char* message, ...);
 } iDebug;

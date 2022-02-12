@@ -11,6 +11,8 @@ bool setGps(iGPS *gps);
 bool setDebug(iDebug *debug);
 bool setMessage(iMessage *message);
 
+bool float_promotion_example(float val) { return val > 2.6f; }
+
 CMod cmod = {
     .init = init,
     .initNet = initNet,
@@ -22,27 +24,46 @@ CMod cmod = {
     .setMessage = setMessage,
 };
 
-bool setNet(iNet *net) { cmod.net = net; };
-bool setGps(iGPS *gps) { cmod.gps = gps; };
-bool setDebug(iDebug *debug) { cmod.debug = debug; };
-bool setMessage(iMessage *message) { cmod.message = message; };
+bool setNet(iNet *net) {
+  cmod.net = net;
+  return true;
+};
+
+bool setGps(iGPS *gps) {
+  cmod.gps = gps;
+  return true;
+};
+
+bool setDebug(iDebug *debug) {
+  cmod.debug = debug;
+  cmod.error = debug->error;
+  cmod.warning = debug->warning;
+  cmod.log = debug->log;
+  return true;
+};
+
+bool setMessage(iMessage *message) {
+  cmod.message = message;
+  return true;
+};
 
 uint8_t initNet() {
-  printf("[INIT] Net. ");
+  float_promotion_example(23);
+  cmod.log("[INIT] Net. ");
   return 0;
 }
 
 uint8_t initMessage() {
-  printf("[INIT] Message. ");
+  cmod.log("[INIT] Message. ");
   return 0;
 }
 
 uint8_t initGps() {
-  printf("[INIT] GPS. ");
+  cmod.log("[INIT] GPS. ");
   return 0;
 }
 
 uint8_t initDebug() {
-  printf("[INIT] GPS. ");
+  cmod.log("[INIT] GPS. ");
   return 0;
 }

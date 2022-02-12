@@ -92,7 +92,6 @@ bool n27_setPowerOff() { return false; }
 
 /** */
 float n27_getBattery() {
-  printf(" YYEEEEE ");
-  cmod.debug->log("Mola mazo!!");
+  cmod.debug->log("Get Battery!!");
   return 0;
 }

@@ -13,6 +13,6 @@ uint8_t init() {
     }
   }
 
-  printf("[INIT] ...done... ");
+  cmod.error("[INIT] ...done... ");
   return 0;
 }

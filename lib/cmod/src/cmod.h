@@ -31,6 +31,11 @@ typedef struct CMod {
   bool (*setGps)(iGPS *gps);
   bool (*setMessage)(iMessage *message);
   bool (*setNet)(iNet *net);
+
+  // debug
+  void (*error)(char *message, ...);
+  void (*warning)(char *message, ...);
+  void (*log)(char *message, ...);
 } CMod;
 
 extern CMod cmod;
