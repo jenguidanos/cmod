@@ -15,3 +15,7 @@ iMessage messageBin = {
     .setData = messageBinSetData,
     .get = messageBinGet,
 };
+
+int messageBinInit() {
+  return 0;
+}

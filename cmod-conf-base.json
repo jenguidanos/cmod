@@ -6,7 +6,10 @@
         "message": "bin",
         "net": "n27",
         "sensors": [],
-        "uart": []
+        "uart": [],
+        "i2c": [],
+        "spi": [],
+        "can": []
     },
     "conf": {
         "debug": {

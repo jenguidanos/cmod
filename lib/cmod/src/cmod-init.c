@@ -13,6 +13,6 @@ uint8_t init() {
     }
   }
 
-  cmod.error("[INIT] ...done... ");
+  cmod.log->info("[INIT] ...done... ");
   return 0;
 }

@@ -5,14 +5,14 @@
 int cmodDebugPrintfInit();
 void cmodDebugPrintfError(char* message, ...);
 void cmodDebugPrintfWarn(char* message, ...);
-void cmodDebugPrintfLog(char* message, ...);
+void cmodDebugPrintfInfo(char* message, ...);
 void cmodPrintf(iDebugLevelType level, char* message, ...);
 
 iDebug cmodDebugPrintf = {
     .init = cmodDebugPrintfInit,
     .error = cmodDebugPrintfError,
     .warning = cmodDebugPrintfWarn,
-    .log = cmodDebugPrintfLog,
+    .info = cmodDebugPrintfInfo,
 };
 
 void cmodDebugPrintfError(char* message, ...) {
@@ -23,12 +23,12 @@ void cmodDebugPrintfWarn(char* message, ...) {
   cmodPrintf(CMOD_WARNING, message);
 }
 
-void cmodDebugPrintfLog(char* message, ...) { cmodPrintf(CMOD_LOG, message); }
+void cmodDebugPrintfInfo(char* message, ...) { cmodPrintf(CMOD_INFO, message); }
 
 void cmodPrintf(iDebugLevelType level, char* message, ...) {
   printf("[%s] ", level == CMOD_ERROR     ? "ERROR"
                   : level == CMOD_WARNING ? "WARNING"
-                                          : "LOG");
+                                          : "INFO");
   va_list args;
   va_start(args, message);
   vprintf(message, args);

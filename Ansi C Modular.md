@@ -141,7 +141,7 @@ void publishBattery() {
     if (!core.net->connect()) {
         return error;
     }
-    
+
     [...]
 }
 ```

@@ -1,7 +1,7 @@
 #include "cmod-net-n27.h"
 
 #include "cmod.h"
-#include "modules.h"
+#include "cmod-modules.h"
 
 /*
 .########..########..####.##.....##....###....########.########
@@ -92,6 +92,6 @@ bool n27_setPowerOff() { return false; }
 
 /** */
 float n27_getBattery() {
-  cmod.debug->log("Get Battery!!");
+  cmod.log->info("Get Battery!!");
   return 0;
 }

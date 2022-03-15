@@ -1,0 +1,15 @@
+#pragma once
+
+#include "cmod-modules.h"
+
+#define CMOD_NET_ENABLED 1
+#define CMOD_NET_DEFAULT CMOD_NET_N27
+
+#define CMOD_GPS_ENABLED 1
+#define CMOD_GPS_DEFAULT 1
+
+#define CMOD_DEBUG_ENABLED 1
+#define CMOD_DEBUG_DEFAULT CMOD_DEBUG_PRINTF
+
+#define CMOD_MESSAGE_ENABLED 1
+#define CMOD_MESSAGE_DEFAULT CMOD_MESSAGE_BIN

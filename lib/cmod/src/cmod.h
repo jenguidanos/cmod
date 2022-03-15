@@ -16,7 +16,7 @@ uint8_t initMessage();
 uint8_t initNet();
 
 typedef struct CMod {
-  iDebug *debug;
+  iDebug *log;
   iGPS *gps;
   iMessage *message;
   iNet *net;
@@ -31,11 +31,6 @@ typedef struct CMod {
   bool (*setGps)(iGPS *gps);
   bool (*setMessage)(iMessage *message);
   bool (*setNet)(iNet *net);
-
-  // debug
-  void (*error)(char *message, ...);
-  void (*warning)(char *message, ...);
-  void (*log)(char *message, ...);
 } CMod;
 
 extern CMod cmod;
