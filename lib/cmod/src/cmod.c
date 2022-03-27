@@ -24,27 +24,36 @@ CMod cmod = {
 
 bool setNet(iNet *net) {
   cmod.net = net;
+  cmod.net->init();
   return true;
 };
 
 bool setGps(iGPS *gps) {
   cmod.gps = gps;
+  cmod.gps->init();
   return true;
 };
 
 bool setDebug(iDebug *debug) {
   cmod.log = debug;
+  cmod.log->init();
   return true;
 };
 
 bool setMessage(iMessage *message) {
   cmod.message = message;
+  cmod.message->init();
   return true;
 };
 
 uint8_t initNet() {
-  cmod.log->info("[INIT] Net. ");
-  return 0;
+#if CMOD_NET_ENABLED
+  cmod.net = &CMOD_NET_DEFAULT_MODULE;
+#else
+  cmod.net = &CMOD_NET_FALLBACK_MODULE;
+#endif
+
+  return cmod.net->init() ? 0 : 1;
 }
 
 uint8_t initMessage() {
@@ -58,6 +67,10 @@ uint8_t initGps() {
 }
 
 uint8_t initDebug() {
-  cmod.log->info("[INIT] GPS. ");
+  #if CMOD_DEBUG_ENABLED
+    cmod.log = &CMOD_DEBUG_DEFAULT_MODULE;
+  #else
+    cmod.log = &CMOD_DEBUG_FALLBACK_MODULE;
+  #endif
   return 0;
 }

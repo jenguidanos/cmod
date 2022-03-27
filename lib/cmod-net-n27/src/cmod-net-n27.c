@@ -3,34 +3,12 @@
 #include "cmod.h"
 #include "cmod-modules.h"
 
-/*
-.########..########..####.##.....##....###....########.########
-.##.....##.##.....##..##..##.....##...##.##......##....##......
-.##.....##.##.....##..##..##.....##..##...##.....##....##......
-.########..########...##..##.....##.##.....##....##....######..
-.##........##...##....##...##...##..#########....##....##......
-.##........##....##...##....##.##...##.....##....##....##......
-.##........##.....##.####....###....##.....##....##....########
-*/
-
-// private methods
-
-/*
-.####.########....###.....######..########
-..##..##.........##.##...##....##.##......
-..##..##........##...##..##.......##......
-..##..######...##.....##.##.......######..
-..##..##.......#########.##.......##......
-..##..##.......##.....##.##....##.##......
-.####.##.......##.....##..######..########
-*/
-
 bool n27_setId(char* id);
+bool n27_init();
 
 bool n27_setPowerOn();
 bool n27_setPowerOff();
 bool n27_setStandby();
-float n27_getBattery();
 
 bool n27_enable();
 bool n27_disable();
@@ -46,6 +24,7 @@ iNet N27 = {
     .id = {'\0'},
     .setId = n27_setId,
 
+    .init = n27_init,
     .enable = n27_enable,
     .disable = n27_disable,
     .getCoverage = n27_getCoverage,
@@ -56,12 +35,17 @@ iNet N27 = {
 
     .setPowerOn = n27_setPowerOn,
     .setPowerOff = n27_setPowerOff,
-    .setStandby = n27_setStandby,
-    .getBattery = n27_getBattery,
+    .setStandby = n27_setStandby
 };
 
 /** */
 bool n27_setId(char* id) { return false; }
+
+/** */
+bool n27_init() {
+  cmod.log->info("[INIT] Net N27. ");
+  return true;
+}
 
 /** */
 bool n27_enable() { return false; }
@@ -89,9 +73,3 @@ bool n27_setPowerOn() { return false; }
 
 /** */
 bool n27_setPowerOff() { return false; }
-
-/** */
-float n27_getBattery() {
-  cmod.log->info("Get Battery!!");
-  return 0;
-}

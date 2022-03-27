@@ -1,34 +1,5 @@
 {
-    "files.associations": {
-        "stdio.h": "c",
-        "uart-iface.h": "c",
-        "platform.h": "c",
-        "uart-manager.h": "c",
-        "termios.h": "c",
-        "uart.h": "c",
-        "*.r": "c",
-        "n27.h": "c",
-        "cmod.h": "c",
-        "cmod-net-n27.h": "c",
-        "inet.h": "c",
-        "cmod-debug-printf.h": "c",
-        "idebug.h": "c",
-        "imessage.h": "c",
-        "stdlib.h": "c",
-        "array": "c",
-        "string": "c",
-        "string_view": "c",
-        "ranges": "c",
-        "*.tcc": "c",
-        "unordered_map": "c",
-        "numeric": "c",
-        "ostream": "c",
-        "modules.h": "c",
-        "net.h": "c",
-        "cmod-net.h": "c",
-        "message.h": "c",
-        "cmod-platform.h": "c"
-    },
+    "C_Cpp.autoAddFileAssociations": false,
     "json.schemas": [
         {
             "fileMatch": [

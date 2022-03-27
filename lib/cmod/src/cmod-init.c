@@ -2,7 +2,7 @@
 
 uint8_t init() {
   uint8_t err = 0;
-  uint8_t (*initModules[])() = {initNet, initGps, initMessage, initDebug};
+  uint8_t (*initModules[])() = {initDebug, initNet, initGps, initMessage};
 
   const uint8_t modulesSize = sizeof(initModules) / sizeof(initModules[0]);
 
