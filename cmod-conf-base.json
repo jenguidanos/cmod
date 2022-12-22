@@ -1,27 +1,21 @@
 {
-    "modules": {
-        "debug": "printf",
-        "fs": [],
-        "gps": [],
-        "message": "bin",
-        "net": "n27",
-        "sensors": [],
-        "uart": [],
-        "i2c": [],
-        "spi": [],
-        "can": []
-    },
     "conf": {
         "debug": {
-            "enabled": false,
-            "serial": 1
+            "modules": ["printf"],
+            "enabled": true
+        },
+        "gps": {
+            "modules": ["gps"],
+            "enabled": false
         },
         "message": {
+            "modules": ["bin"],
             "enabled": true
         },
         "net": {
-            "enable": true,
-            "serial": 2
+            "modules": ["esp32wifi"],
+            "enabled": true
         }
-    }
+    },
+    "macros": []
 }

@@ -7,5 +7,6 @@
             ],
             "url": "./scripts/cmod-conf.schema.json"
         }
-    ]
+    ],
+    "cSpell.language": "en,es-ES"
 }

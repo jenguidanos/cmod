@@ -3,7 +3,7 @@
 #include "cmod-modules.h"
 
 #define CMOD_NET_ENABLED 1
-#define CMOD_NET_DEFAULT CMOD_NET_N27
+#define CMOD_NET_DEFAULT CMOD_NET_ESP32WIFI
 
 #define CMOD_GPS_ENABLED 1
 #define CMOD_GPS_DEFAULT 1

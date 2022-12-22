@@ -2,4 +2,4 @@
 
 #include "iface/inet.h"
 
-extern iNet N27;
+extern iNet cmod_net_esp32wifi;

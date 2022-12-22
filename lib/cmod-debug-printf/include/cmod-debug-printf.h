@@ -2,4 +2,4 @@
 
 #include "iface/idebug.h"
 
-extern iDebug cmodDebugPrintf;
+extern iDebug cmod_debug_printf;

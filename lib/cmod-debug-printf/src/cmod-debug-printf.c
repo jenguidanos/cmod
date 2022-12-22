@@ -13,7 +13,7 @@ static const char CMOD_DP_WARN_TAG[] = "WARN";
 static const char CMOD_DP_INFO_TAG[] = "INFO";
 static const char CMOD_DP_VPRINTF_TAG[] = "[%s] ";
 
-iDebug cmodDebugPrintf = {
+iDebug cmod_debug_printf = {
     .init = cmodDebugPrintfInit,
     .error = cmodDebugPrintfError,
     .warning = cmodDebugPrintfWarn,
